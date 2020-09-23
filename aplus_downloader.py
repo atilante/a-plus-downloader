@@ -79,7 +79,7 @@ def safe_config():
     with open(CONFIG_FILE, 'w') as f:
         config.write(f)
 
-
+# Command line interface implemented with Click https://pypi.org/project/click/
 @click.group()
 @click.option('-v', '--verbose', count=True)
 def main(verbose):
